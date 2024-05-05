@@ -43,13 +43,13 @@ $('#btnLogin').click(function () {
                         usuarioEncontrado = true;
                         console.log("Usuario encontrado:", usuario.correo);
                         console.log("Rol:", usuario.rol);
-                        window.location.href = '/src/Admin/dashboard.html'
+                        window.location.href = 'https://notsteven4000.github.io/CoolGlassesWeb/src/Admin/dashboard.html'
                         // Si el inicio de sesión es exitoso, muestra una alerta
                         Swal.fire({
                             icon: 'success',
                             title: 'Inicio de sesion correctamente!',
                             showConfirmButton: false,
-                            timer: 1500
+                            timer: 3000
                         });
 
                         
@@ -69,7 +69,6 @@ $('#btnLogin').click(function () {
             }
         } catch (error) {
             console.error("Error al consultar la base de datos:", error);
-            // Aquí puedes manejar el error como desees, por ejemplo, mostrando un mensaje al usuario
         }
     });
 });
