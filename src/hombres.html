@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="https://notsteven4000.github.io/CoolGlassesShop/img/logo.png">
+    <!---Iconos de font-awesome -->
+    <script src="https://kit.fontawesome.com/e18efd7439.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Cool Glasses</title>
+</head>
+
+<body>
+        <!------NAVBAR INICIO----->
+        <nav
+        class="bg-white dark:bg-gray-950 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xxl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://notsteven4000.github.io/CoolGlassesShop/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://notsteven4000.github.io/CoolGlassesShop/img/logo.png" alt="" class="w-16 h-16">
+                <span class="text-3xl ml-3" id="coolGlassesShop" style="color: white;">
+                    <span class="font-bold hidden md:inline">Cool</span><span> Glasses</span>
+                </span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                    aria-expanded="false"
+                    class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <span class="sr-only">Buscar</span>
+                </button>
+
+                <div class="relative hidden md:block">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Buscar en la página">
+                </div>
+
+                <button data-collapse-toggle="navbar-search" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-search" aria-expanded="false">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+
+                <a href="https://notsteven4000.github.io/CoolGlassesShop/src/login.html" type="button" class=" ml-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 
+                text-center dark:bg-black dark:hover:bg-gray-700 dark:focus:ring-blue-800"><i
+                        class="fa-solid fa-user fa-xl"></i>
+                </a>
+            </div>
+            <div style="color: white;" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                id="navbar-search">
+                <div class="relative mt-3 md:hidden">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Buscar">
+                </div>
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="https://notsteven4000.github.io/CoolGlassesShop/index.html"
+                            class="tracking-wide cursor-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-red-500">Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hombres.html"
+                            class="tracking-wide cursor-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-pink-600">Hombres
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mujeres.html"
+                            class="tracking-wide cursor-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-pink-600">Mujeres</a>
+                    </li>
+                    <li>
+                        <a href="ninos.html"
+                            class="tracking-wide cursor-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-pink-600">Niños</a>
+                    </li>
+                    <li>
+                        <a id="mega-menu-full-cta-image-button" data-collapse-toggle="mega-menu-full-image-dropdown"
+                            class="flex items-center cursor-pointer rounded font-semibold text-lg transition hover:text-rose-700 hover:bg-gray-800">Novedades
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a href="acercade.html"
+                            class="tracking-wide cursor-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-pink-600">Acerca
+                            de</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="mega-menu-full-image-dropdown"
+            class="hidden mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600">
+            <div
+                class="grid max-w-screen-xl px-4 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
+                <ul class="hidden mb-4 space-y-4 md:mb-0 md:block" aria-labelledby="mega-menu-full-image-button">
+                    <li>
+                        <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">Transitions</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">Progresivos</a>
+                    </li>
+                </ul>
+                <ul class="mb-4 space-y-4 md:mb-0">
+                    <li>
+                        <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">Gafas de
+                            sol</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">Block light
+                            blue</a>
+                    </li>
+                </ul>
+                <a href="https://notsteven4000.github.io/CoolGlassesShop/src/hombres.html"
+                    class="p-8 bg-local bg-gray-300 bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-soft-light dark:hover:bg-blend-darken"
+                    style="background-image: url(https://notsteven4000.github.io/CoolGlassesShop/img/persona_lentes4.avif)">
+                    <p class="max-w-xl mb-5 font-extrabold leading-tight tracking-tight text-white">Revisa lo mejor de
+                        hombre.</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!------NAVBAR FIN----->
+
+    <!----TITULO INICIO----->
+    <div class="container mx-auto mt-20 py-20 w-10/12 md:w-10/12">
+        <h2 class="text-5xl font-extrabold text-center">Hombres</h2>
+        <br>
+        <p class="tracking-wider text-gray-500 md:text-lg dark:text-gray-400 text-center">Claridad con un toque de
+            masculinidad.</p>
+    </div>
+    <!----TITULO FIN----->
+
+    <!---GALLERIA DE IMAGENES DE HOMBRES--->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap">
+            <div class="flex flex-wrap md:-m-2 -m-1">
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="https://firebasestorage.googleapis.com/v0/b/webpage-c2682.appspot.com/o/hombres_lentes%2Fhombre_lentes15.jpg?alt=media&token=f52e8a3c-41d1-40fe-b978-47f3195f4d46">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="https://firebasestorage.googleapis.com/v0/b/webpage-c2682.appspot.com/o/hombres_lentes%2Fhombre_lentes1.webp?alt=media&token=452af6e3-7c82-47db-8de0-1527ece32cb3">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block"
+                            src="https://firebasestorage.googleapis.com/v0/b/webpage-c2682.appspot.com/o/hombres_lentes%2Fhombre_lentes3.jpg?alt=media&token=460e79a5-9db8-42c6-bba9-af1b31102c8b">
+                    </div>
+                </div>
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block"
+                            src="https://firebasestorage.googleapis.com/v0/b/webpage-c2682.appspot.com/o/hombres_lentes%2Fhombre_lentes13.jpg?alt=media&token=202c4211-d97b-4a9e-a66d-787bdeaebbfd">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="https://firebasestorage.googleapis.com/v0/b/webpage-c2682.appspot.com/o/hombres_lentes%2Fhombre_lentes2.webp?alt=media&token=7c0e55cd-030e-4052-81ca-41682021b017">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="https://firebasestorage.googleapis.com/v0/b/webpage-c2682.appspot.com/o/hombres_lentes%2Fhombre_lentes7.webp?alt=media&token=872bf0c8-e493-4646-a480-46606f475ecc">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------FILTRO DE CATEGORIAS------->
+    <section class="lg:py-36 md:py-24 sm:py-24 py-24">
+        <main class="flex flex-col md:flex-row sm:flex-2 container mx-auto max-w-8xl justify-center ">
+            <div class="space-y-4 p-2 w-full md:max-w-[15rem] mb-20 ">
+                <h2 class="text-2xl font-extrabold">Filtros</h2>
+                <h3 class="text-xl mb-2 font-semibold">Categorias</h3>
+                <div id="filters-container" class="text-xl space-y-2">
+                    <div>
+                        <select id="categoria" class="form-select">
+                            <option value="">Seleccionar categoría</option>
+                            <option value="bifocales">Bifocales</option>
+                            <option value="transitions">Transitions</option>
+                            <option value="filtro de luz">Filtro de luz</option>
+                            <option value="gafas de sol">Gafas de sol</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Productos gafas -->
+            <section id="bodyProductosHombre"
+                class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 justify-center flex-wrap mb-32">
+            </section>
+        </main>
+    </section>
+
+    <!-----IMPORTACIONES SCRIPTS----->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <script src="./js/cargarproductos.js"></script>
+    <script src="./js/javascript.js"></script>
+
+</body>
+
+
+<footer class="bg-black shadow white:bg-gray-900 ">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="https://notsteven4000.github.io/CoolGlassesShop/index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="https://notsteven4000.github.io/CoolGlassesShop/img/logo.png" class="h-8" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cool Glasses</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="https://notsteven4000.github.io/CoolGlassesShop/src/hombres.html" class="hover:underline me-4 md:me-6">Hombres</a>
+                </li>
+                <li>
+                    <a href="https://notsteven4000.github.io/CoolGlassesShop/src/mujeres.html" class="hover:underline me-4 md:me-6">Mujeres</a>
+                </li>
+                <li>
+                    <a href="https://notsteven4000.github.io/CoolGlassesShop/src/ninos.html" class="hover:underline me-4 md:me-6">Niños</a>
+                </li>
+                <li>
+                    <a href="https://notsteven4000.github.io/CoolGlassesShop/src/acercade.html" class="hover:underline">Acerca de nosotros</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
+                href="https://notsteven4000.github.io/CoolGlassesShop/index.html" class="hover:underline">Cool Glasses™</a>. Página web creada por Steven
+            Guevara Pando.</span>
+    </div>
+</footer>
+
+</html>
