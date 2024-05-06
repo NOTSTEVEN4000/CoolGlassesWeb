@@ -24,10 +24,10 @@ function guardarProducto() {
   const nombre = $('#nombre').val();
   const descripcion = $('#descripcion').val();
   const categoria = $('#categoria').val();
-  descuento = $('#descuento').val();
+  const descuento = $('#descuento').val(); // Corregido aquí, falta la palabra clave const
   const genero = $('#genero').val();
   const imagen = $('#imagen').val();
-  precio = $('#precio').val();
+  const precio = $('#precio').val(); // Corregido aquí, falta la palabra clave const
 
   coleccionProductos.child(id).set({
       codigo: codigo,
@@ -42,8 +42,13 @@ function guardarProducto() {
 
   // Limpiar los campos después de enviar el formulario
   $('form').trigger('reset');
+  // Cerrar el drawer
+  cerrarDrawer();
 }
 
+function cerrarDrawer() {
+  document.querySelector('[data-drawer-dismiss="drawer-create-product-default"]').click();
+}
 
 $('form').submit(function (e) {
   e.preventDefault();
@@ -151,13 +156,13 @@ $('#tablaProductos').on('click', '#deleteProductButton', function () {
   let id = $(this).closest('tr').attr('id');
   // Mostrar un cuadro de diálogo de confirmación
   Swal.fire({
-    title: '¿Está seguro de eliminar el producto?',
-    text: "¡Esta operación no se puede revertir!",
+    title: '¿Estás seguro de eliminar el producto?',
+    text: "Confirme por favor!",
     icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#d33',
     cancelButtonColor: '#3085d6',
-    confirmButtonText: 'Borrar'
+    confirmButtonText: 'Eliminar'
   }).then((result) => {
     // Si el usuario confirma la eliminación
     if (result.value) {
@@ -165,7 +170,7 @@ $('#tablaProductos').on('click', '#deleteProductButton', function () {
       db.ref(`productos/${id}`).remove()
         .then(() => {
           // Si la eliminación es exitosa, mostrar un mensaje de éxito
-          Swal.fire('¡Eliminado!', 'El producto ha sido eliminado.', 'success');
+          Swal.fire('¡Producto Eliminado!', 'El producto fue eliminado.', 'success');
         })
         .catch((error) => {
           // Si ocurre un error durante la eliminación, mostrar un mensaje de error

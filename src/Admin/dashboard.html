@@ -12,14 +12,7 @@
     <!---Iconos de font-awesome -->
     <script src="https://kit.fontawesome.com/e18efd7439.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-
-
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.6/css/dataTables.dataTables.css" />
-  
-    
-    
-
     <link rel="icon" type="image/x-icon" href="https://notsteven4000.github.io/CoolGlassesShop/img/logo.png">
     <title>Cool Glasses</title>
 </head>
@@ -214,12 +207,12 @@
                                 placeholder="nombre del producto" required="">
                         </div>
                         <div>
-                            <label for="precio"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Precio</label>
+                            <label for="precio" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Precio</label>
                             <input type="number" name="price" id="precio"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                placeholder="$" required="">
+                                placeholder="$" required="" step="0.01">
                         </div>
+                        
                         <div>
                             <label for="categoria"
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Categorias</label>
@@ -272,7 +265,7 @@
                                 placeholder="URL de Imagen" required="">
                         </div>
                         <div class="bottom-0 left-0 flex justify-center w-full pb-4 space-x-4 md:px-4 md:absolute">
-                            <button type="submit"
+                            <button type="submit" 
                                 class="text-white w-full justify-center bg-green-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                                 Guardar producto
                             </button>

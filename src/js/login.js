@@ -42,8 +42,6 @@ $('#btnLogin').click(function () {
                     const usuario = usuarios[key];
                     if (usuario.correo === email && usuario.contrasena === password) {
                         usuarioEncontrado = true;
-                        console.log("Usuario encontrado:", usuario.correo);
-                        console.log("Rol:", usuario.rol);
                         window.location.href = 'https://notsteven4000.github.io/CoolGlassesWeb/src/Admin/dashboard.html'
                         // Si el inicio de sesión es exitoso, muestra una alerta
                         Swal.fire({
