@@ -57,14 +57,15 @@ $('#btnLogin').click(function () {
             }
 
             if (!usuarioEncontrado) {
-                console.log("Usuario no encontrado o contraseña incorrecta.");
-                             // Si el inicio de sesión es exitoso, muestra una alerta
-                             Swal.fire({
-                                icon: 'error',
-                                title: 'Usuario no encontrado o contraseña incorrecta.',
-                                showConfirmButton: false,
-                                timer: 1500
-                            });
+                console.log("Usuario no encontrado!.");
+                // Si el inicio de sesión es exitoso, muestra una alerta
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Usuario no encontrado!.',
+                    text: 'Revise la credencial.',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
             }
         } catch (error) {
             console.error("Error al consultar la base de datos:", error);
