@@ -1,4 +1,4 @@
-// Your web app's Firebase configuration
+
 var firebaseConfig = {
     apiKey: "AIzaSyAbd11VWk59OtFFL3i67wpHH7E5yqfrBCs",
     authDomain: "webpage-c2682.firebaseapp.com",
@@ -19,6 +19,7 @@ coleccionUsuarios.once('value', (snapshot) => {
     const usuarios = snapshot.val();
     console.log(usuarios);
 });
+
 
 $('#btnLogin').click(function () {
     document.getElementById('loginForm').addEventListener('submit', async function (event) {

@@ -29,34 +29,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function CargarProductos({ codigo, nombre, precio, categoria, descripcion, descuento, imagen, genero }) {
     return `
-    <div class="flex flex-wrap max-w-sm mx-2 mb-4 bg-black border rounded-lg shadow 
-                dark:bg-slate-300
-                transition duration-300 ease-in-out transform hover:scale-95">
-                    <a>
-                        <img style="height: 170px;" class="rounded-t-lg" src="${imagen}" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a>
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                            ${nombre}</h5>
-                        </a>
-                        <a>
-                            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-black">
-                            ${categoria}</h5>
-                        </a>
-                        <a>
-                            <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900 dark:text-black">Genero: 
-                            ${genero}</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-600">${descripcion}</p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-3xl font-bold text-gray-900 dark:text-black">$ ${precio}</span>
-                            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none 
-                                focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600
-                                 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Carrito</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="flex flex-wrap max-w-sm mx-2 mb-4 bg-black border rounded-lg shadow dark:bg-blue-100 transition duration-300 ease-in-out transform hover:scale-95">
+    <a>
+        <img style="height: 180px;" class="rounded-t-lg" src="${imagen}" alt="" />
+    </a>
+    <div class="p-5">
+        <a>
+            <h5 class="mb-2 min-h-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">${nombre}</h5>
+        </a>
+        <a>
+            <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900 dark:text-black">Categoria: ${categoria}</h5>
+        </a>
+        <a>
+            <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900 dark:text-black">Género: ${genero}</h5>
+        </a>
+        <p class="mb-4 min-h-16 font-normal text-gray-700 dark:text-gray-600">${descripcion}</p>
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-gray-900 dark:text-black">code: ${codigo}</span>
+            <span class="text-3xl font-bold text-gray-900 dark:text-black">$ ${precio}</span>
+        </div>
+
+    </div>
+</div>
+
      `
 };
 

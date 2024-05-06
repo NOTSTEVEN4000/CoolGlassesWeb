@@ -24,10 +24,10 @@ function guardarProducto() {
   const nombre = $('#nombre').val();
   const descripcion = $('#descripcion').val();
   const categoria = $('#categoria').val();
-  const descuento = $('#descuento').val();
+  descuento = $('#descuento').val();
   const genero = $('#genero').val();
   const imagen = $('#imagen').val();
-  const precio = $('#precio').val();
+  precio = $('#precio').val();
 
   coleccionProductos.child(id).set({
       codigo: codigo,
@@ -43,6 +43,7 @@ function guardarProducto() {
   // Limpiar los campos después de enviar el formulario
   $('form').trigger('reset');
 }
+
 
 $('form').submit(function (e) {
   e.preventDefault();
@@ -174,4 +175,6 @@ $('#tablaProductos').on('click', '#deleteProductButton', function () {
     }
   });
 });
+
+
 
