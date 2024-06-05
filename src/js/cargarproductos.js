@@ -48,7 +48,6 @@ function CargarProductos({ codigo, nombre, precio, categoria, descripcion, descu
             <span class="text-xs font-bold text-gray-900 dark:text-black">code: ${codigo}</span>
             <span class="text-3xl font-bold text-gray-900 dark:text-black">$ ${precio}</span>
         </div>
-
     </div>
 </div>
 
